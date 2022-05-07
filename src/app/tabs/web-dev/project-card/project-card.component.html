@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image" style="background-image: url('{{ content.avatar }}');"></div>
+        <mat-card-title>{{ content.name }}</mat-card-title>
+        <mat-card-subtitle>{{ content.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="splash-image" mat-card-image [src]="content.image"/>
+    <mat-card-content>{{ content.description }}</mat-card-content>
+    <mat-card-actions>
+      <span class="link-wrapper" *ngFor="let link of content.links">
+        <span class="link-text" *ngIf="link.text">{{ link.text }}</span>
+        <a [href]="link.link" target=”_blank>
+          <mat-icon>{{ link.icon }}</mat-icon>
+        </a>
+      </span>
+    </mat-card-actions>
+  </mat-card>
+  <br>
