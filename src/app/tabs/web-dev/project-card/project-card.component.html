@@ -1,18 +1,17 @@
-<mat-card class="example-card">
+<mat-card class="project-card">
     <mat-card-header>
-        <div mat-card-avatar class="example-header-image" style="background-image: url('{{ content.avatar }}');"></div>
+        <img class="header-image" [src]="content.avatar"/>
         <mat-card-title>{{ content.name }}</mat-card-title>
         <mat-card-subtitle>{{ content.subtitle }}</mat-card-subtitle>
     </mat-card-header>
     <img class="splash-image" mat-card-image [src]="content.image"/>
     <mat-card-content>{{ content.description }}</mat-card-content>
     <mat-card-actions>
-      <span class="link-wrapper" *ngFor="let link of content.links">
-        <span class="link-text" *ngIf="link.text">{{ link.text }}</span>
-        <a [href]="link.link" target=”_blank>
+      <a [href]="link.link" target=”_blank *ngFor="let link of content.links" class="link-wrapper">
+        <button class="link-button" mat-mini-fab matTooltip="{{ link.text }}">
           <mat-icon>{{ link.icon }}</mat-icon>
-        </a>
-      </span>
+        </button>
+      </a>
     </mat-card-actions>
   </mat-card>
   <br>

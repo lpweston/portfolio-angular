@@ -1,2 +1,20 @@
-<app-nav-bar></app-nav-bar>
+<mat-toolbar color="primary" id="nav-bar">
+    <div id="nav-titles">
+        <h1>Launie Weston</h1>
+        <h2>WEB DEVELOPER</h2>
+    </div>
+    <a href="https://www.instagram.com/launie_weston/" target=”_blank matTooltip="Instagram">
+        <mat-icon aria-hidden="false" aria-label="instagram" svgIcon="insta" id="insta-icon"></mat-icon>
+    </a>
+    <a href="https://www.linkedin.com/in/lwestonuk/" target=”_blank matTooltip="Linkedin">
+        <mat-icon aria-hidden="false" aria-label="linkedin" svgIcon="linkedin" id="linkedin-icon"></mat-icon>
+    </a>
+    <a href="https://github.com/lpweston" target=”_blank matTooltip="Github">
+        <mat-icon aria-hidden="false" aria-label="github" svgIcon="github" id="github-icon"></mat-icon>
+    </a>
+    <!-- <mat-icon class="mr-8">brightness_5</mat-icon> -->
+    <mat-slide-toggle [formControl]="toggleControl" class="mr-8">
+    </mat-slide-toggle>
+    <mat-icon>bedtime</mat-icon>
+</mat-toolbar>
 <app-tabs></app-tabs>

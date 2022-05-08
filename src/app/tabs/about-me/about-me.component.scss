@@ -1,10 +1,21 @@
-mat-list-item {
+mat-list-item, mat-grid-list {
     mat-icon {
-        padding: 3px;
+        padding: 5px;
     }
+}
+
+mat-grid-list {
+    width: 60%;
+    margin:20px
+
 }
 
 #marvin {
     width: 300px;
     float: right;
+}
+
+.about-me-wrapper {
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
 }
