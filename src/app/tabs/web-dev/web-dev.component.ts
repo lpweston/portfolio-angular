@@ -1,7 +1,7 @@
 import { Component,  } from '@angular/core';
 import { aJourneyBegins } from './project-card/a-journey-begins';
 import { ncNews } from './project-card/nc-news';
-import { pictuarPuzzel } from './project-card/pictuar-puzzel';
+import { pictuarPuzzle } from './project-card/pictuar-puzzle';
 
 @Component({
   selector: 'app-web-dev',
@@ -10,6 +10,6 @@ import { pictuarPuzzel } from './project-card/pictuar-puzzel';
 })
 export class WebDevComponent {
   ncNews = ncNews
-  pictuarPuzzel = pictuarPuzzel
+  pictuarPuzzle = pictuarPuzzle
   aJourneyBegins = aJourneyBegins
 }

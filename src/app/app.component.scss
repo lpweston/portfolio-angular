@@ -2,6 +2,13 @@
     display: flex;
     justify-content:stretch;
     align-items: center;
+    padding: 30px;
+
+    .title {
+        font-size: xx-large;
+        font-weight: 500;
+        margin-right: 10px;
+    }
 
     #nav-titles {
         margin-right: 5px;
