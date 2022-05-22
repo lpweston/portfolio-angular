@@ -2,6 +2,7 @@ import { Component,  } from '@angular/core';
 import { aJourneyBegins } from './project-card/a-journey-begins';
 import { ncNews } from './project-card/nc-news';
 import { pictuarPuzzle } from './project-card/pictuar-puzzle';
+import { boardGameClub } from './project-card/board-game-club';
 
 @Component({
   selector: 'app-web-dev',
@@ -12,4 +13,5 @@ export class WebDevComponent {
   ncNews = ncNews
   pictuarPuzzle = pictuarPuzzle
   aJourneyBegins = aJourneyBegins
+  boardGameClub = boardGameClub
 }

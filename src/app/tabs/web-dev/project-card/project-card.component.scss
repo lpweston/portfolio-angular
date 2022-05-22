@@ -5,10 +5,20 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .splash-image {
+    .image-container {
         height: 200px;
-        object-fit: cover;
-        object-position: 0% 0%;
+        margin: 0 -16px 5px -16px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        &.scrollable{
+            overflow-y: auto;
+        }
+
+        .splash-image {
+            margin: 0;
+            width: 100%;
+        }
     }
 
     .header-image {

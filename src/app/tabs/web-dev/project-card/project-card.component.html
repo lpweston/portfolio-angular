@@ -1,14 +1,16 @@
 <mat-card class="project-card">
     <mat-card-header>
-        <img class="header-image" [src]="content.avatar"/>
+        <img class="header-image" [src]="content.avatar" alt="logo"/>
         <mat-card-title>{{ content.name }}</mat-card-title>
         <mat-card-subtitle>{{ content.subtitle }}</mat-card-subtitle>
     </mat-card-header>
-    <img class="splash-image" mat-card-image [src]="content.image"/>
+    <div class="image-container" [ngClass]="{ 'scrollable': content.scrollable }">
+      <img class="splash-image" mat-card-image [src]="content.image" [alt]="content.imageAlt"/>
+    </div>
     <mat-card-content>{{ content.description }}</mat-card-content>
     <mat-card-actions>
       <a [href]="link.link" target=”_blank *ngFor="let link of content.links" class="link-wrapper">
-        <button class="link-button" mat-mini-fab matTooltip="{{ link.text }}">
+        <button class="link-button" mat-mini-fab matTooltip="{{ link.text }}" attr.aria-label="{{ link.text }}">
           <mat-icon>{{ link.icon }}</mat-icon>
         </button>
       </a>
