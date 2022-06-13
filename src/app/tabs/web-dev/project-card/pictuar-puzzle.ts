@@ -6,7 +6,7 @@ export const pictuarPuzzle: CardDetails = {
     image: "../../../../assets/images/pictuar-puzzle.jpg",
     imageAlt: "Cards on table, seen through phone camera shows jigsaw pieces",
     avatar: "../../../../assets/images/pictuar-puzzle-av.png",
-    description: "Augmented reality puzzle game, created as final project for Northcoders bootcamp. Using physical cards to create an image that can be seen through your devices camera. Players can select from preloaded images or upload their own from the camera reel.",
+    description: "Augmented reality puzzle game, created as final project for Northcoders bootcamp. Using physical cards to create an image that can be seen through your devices camera. Players can select from preloaded images or upload their own from the camera reel. \n\nCreated using React Native, Viro Reactive, Python and Postgres.",
         links: [
         {
             text: "Video presentation",

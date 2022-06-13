@@ -35,7 +35,7 @@ $angular-dark-theme: mat.define-dark-theme(
 @include mat.all-component-themes($angular-default-theme);
 
 /* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
+html, body { width: fit-content; }
 body { 
     margin: 0; 
     font-family: Roboto, 

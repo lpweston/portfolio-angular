@@ -7,7 +7,7 @@ export const boardGameClub: CardDetails = {
     scrollable: true,
     imageAlt: "Screenshot board game club site",
     avatar: "../../../../assets/images/board-game-av.png",
-    description: "I made this site for my local board game club. Using Angular framework to provide a simple site with all the information required to advertise the club.",
+    description: "I made this site for my local board game club. \n\n Build using Angular framework to provide a simple site with all the information required to advertise the club.",
     links: [
         {
             link: "https://newton-board-game-club.netlify.app/",

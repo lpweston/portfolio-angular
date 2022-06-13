@@ -7,7 +7,7 @@ export const ncNews: CardDetails = {
     imageAlt: "Screenshot of nc news site",
     scrollable: true,
     avatar: "../../../../assets/images/nc-news-av.png",
-    description: "NorthCoders News is a discussion board. This was a project made during the Northcoders bootcamp. I was given a list of user stories to satisfy on the front end, and the back end is a RESTful API, made with full test driven development.",
+    description: "NorthCoders News is a discussion board. This was a project made during the Northcoders bootcamp. \n\nI was given a list of user stories to satisfy on the front end, and the back end is a RESTful API, made with full test driven development. I used React framework and a PSQL database.",
     links: [
         {
             link: "https://news-nc.netlify.app/",
